@@ -7,7 +7,7 @@ export default function HomePage({ list }) {
 	return (
 		<div className={styles.lists_container}>
 			{days.map(day => {
-				return (<ListDayNames orders={list.filter(a => a.tag == day)} day={day} />)
+				return (<ListDayNames key={day} orders={list.filter(a => a.tag == day)} day={day} />)
 			})}
 		</div>
 	)

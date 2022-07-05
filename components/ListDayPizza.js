@@ -32,7 +32,7 @@ export default function ListDayPizza({ orders, day }) {
                     </tr>
                     {orders.map((order) => {
                         return (
-                                <tr>
+                                <tr key={order.id}>
                                     <td className={styles.hover}>{order.name}</td>
                                     <td className={styles.hover}>{order.teig}</td>
                                     <td className={styles.hover}>{order.sauce}</td>
