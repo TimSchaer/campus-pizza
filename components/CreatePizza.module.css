@@ -4,14 +4,83 @@
     width: 100%;
     min-height: 100vh;
     margin-right: 0;
-    text-align: center;
+    text-align: left;
 }
+.form {
+    border: 2px solid var(--dark_green);
+    padding: 1em;
+    padding-top: 0;
 
+}
 .header{
     color: var(--dark_green);
     margin-top: 0.5em;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.5em;
     font-size: 20pt;
+}
+
+.textBox {
+    background-color: var(--grey);
+    border: 2px solid var(--dark_green);
+    border-radius: 7px;
+    padding: 0.3em;
+}
+
+.textBox:focus{
+    outline: none;
+}
+
+
+.label {
+    color: var(--dark_green);
+    font-size: 12pt;
+    margin-bottom: 0.5em;
+}
+
+.checkboxes li [type='checkbox'] {
+    accent-color: var(--dark_green);
+}
+
+.checkboxes, .checkboxes li {
+    text-align: left;
+    margin:0;
+    margin-bottom: 0.5em;
+    padding:0;
+    list-style:none;
+}
+.checkboxes li {
+    display:inline-block;
+    width:33.3333%;
+    margin-bottom: 1em;
+}
+
+.checkboxes label{
+    font-size: 10pt;
+    color: var(--dark_green);
+    background-color: var(--grey);
+    border: 2px solid var(--dark_green);
+    border-radius: 7px;
+    padding: 0.3em;
+}
+
+.timePicker {
+    border-radius: 7px;
+    color: var(--dark_green);
+    background-color: var(--grey);
+    border: 2px solid var(--dark_green);
+    padding: 2px;
+}
+.timePicker:focus{
+    outline: none;
+}
+
+.timePicker::-webkit-calendar-picker-indicator{
+    filter: brightness(0) saturate(100%) invert(19%) sepia(12%) saturate(5243%) hue-rotate(82deg) brightness(94%) contrast(89%);
+}
+.checkboxes input:checked + label {
+    color: var(--grey);
+    background-color: var(--dark_green);
+
 }
 
 .buttonDoughes, .buttonBase{
@@ -19,10 +88,27 @@
     margin-right: 0.5em;
     background-color: var(--grey);
     border: 2px solid var(--dark_green);
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 0.4em;
 }
 .buttonDoughes:hover, .buttonBase:hover {
+    background-color: var(--dark_green);
+    color: var(--grey);
+}
+
+.createButton {
+    font-weight: bold;
+    color: var(--dark_green);
+    background-color: var(--grey);
+    border: 2px solid var(--dark_green);
+    font-size: 13pt;
+    border-radius: 7px;
+    padding: 0.4em;
+    margin-top: 0.5em;
+    float: left;
+    text-align: center;
+}
+.createButton:hover {
     background-color: var(--dark_green);
     color: var(--grey);
 }

@@ -1,0 +1,40 @@
+.list_container {
+    justify-content: space-between;
+    background-color: var(--grey);
+    border: 1px solid var(--dark_green);
+    border-top: 0;
+    padding: 1em;
+    width: 20%;
+    min-height: 100vh;
+    margin-right: 0;
+    color: black;
+    text-align: center;
+
+}
+
+.listTitle {
+    color: var(--dark_green);
+    background-color: var(--grey);
+    border: 2px solid var(--dark_green);
+    border-radius: 7px;
+    padding: 0.4em;
+}
+
+.listTitle:hover {
+    background-color: var(--dark_green);
+    color: var(--grey);
+}
+
+.name_container {
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 0.25em;
+    text-align: center;
+    font-size: 14pt;
+}
+.name_container p {
+    margin: 0;
+
+}
+
+
