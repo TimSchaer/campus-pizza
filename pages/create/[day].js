@@ -20,7 +20,7 @@ export async function getStaticPaths() {
     return { paths, fallback: true }
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
     const day = context.params.day
     const list = await ListsAPI.readAll();
     return {

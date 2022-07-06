@@ -14,7 +14,7 @@ export default function HomePage({ list }) {
 	)
 
 }
-export async function getServerSideProps() {
+export async function getStaticProps() {
 	const list = await ListsAPI.readAll();
 	return {
 		props: { list }
