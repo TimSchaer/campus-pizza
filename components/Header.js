@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <>
             <header className={styles.header}>
-                <Link href={"/"}><img src="../public/pizza.png"/></Link>
+                <Link href={"/"}><img src="/pizza.png"/></Link>
                 <Link href={"/"}><h1>Campus Pizza</h1></Link>
 
             </header>
