@@ -4,6 +4,7 @@ import ListDayNames from "../components/ListDayNames";
 
 export default function HomePage({ list }) {
 	const days = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"];
+
 	return (
 		<div className={styles.lists_container}>
 			{days.map(day => {
@@ -13,7 +14,7 @@ export default function HomePage({ list }) {
 	)
 
 }
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	const list = await ListsAPI.readAll();
 	return {
 		props: { list }
